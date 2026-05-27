@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Firts Web Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <main>
+        <!-- Sección con Background (Degradado) -->
+        <section class="hero">
+            <h1>Bienvenidos a nuestra tienda "Cumaná Foods"</h1>
+        </section>
+
+        <!-- Sección Productos con Flexbox -->
+        <section id="productos" class="productos-container">
+            <div class="card">Tequeños</div>
+            <div class="card">Mini Empanadas</div>
+            <div class="card">Tabla de Picadas Venezolanas</div>
+        </section>
+
+        <!-- Sección Reseñas con Grid -->
+        <section id="resenas" class="resenas-grid">
+            <div class="resena">Pedidos Ya</div>
+            <div class="resena">Rappi</div>
+            <div class="resena">Mercado Delivery</div>
+            <div class="resena">Uber Eats</div>
+        </section>
+
+        <!-- Sección Contacto con Media Queries -->
+        <section id="contacto" class="contacto">
+            <h2>Contáctanos</h2>
+            <form>
+                <input type="text" placeholder="Tu nombre">
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <main>
+    <!-- Sección de Inicio con Multimedia -->
+    <section id="inicio">
+        <h1>Nuestra Galería</h1>
+        
+        <!-- Imagen con accesibilidad (alt text) -->
+        <div class="media-container">
+            <img src="". alt="" width="3%">
+            <p id="parrafo especcial">Descripción detallada de la imagen para accesibilidad</p>
+        </div>
+
+        <!-- Integración de Video o Iframe -->
+        <div class="video-container">
+            <iframe 
+                width="560" 
+                height="315" 
+                src="C:\Users\one_6\Pictures\móvil clean 2024\InShot_20231030_020601200.mp4" 
+                title="Video explicativo"
+                frameborder="0" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+</main>
+    <main>
+        <section class="form-container">
+            <h1>Contacto</h1>
+            <!-- El atributo 'action' se conectará con Formspree -->
+            <form action="https://formspree.io/f/TU_ID_AQUI" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="name" required placeholder="Tu nombre">
+                </div>
+                
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required placeholder="tu@correo.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="message" rows="5" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
